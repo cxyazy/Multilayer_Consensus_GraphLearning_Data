@@ -1,0 +1,61 @@
+{
+  "network_preset": "scale_free",
+  "difficulty": "hard",
+  "num_nodes": 50,
+  "num_layers": 2,
+  "num_alternatives": 5,
+  "num_criteria": 4,
+  "train_instances": 12,
+  "validation_instances": 3,
+  "test_instances": 1,
+  "seed": 42,
+  "fixed_network_per_preset": true,
+  "importance_mode": "external_dirci",
+  "importance_source": "external_dirci",
+  "kmeans_clusters": 4,
+  "kmeans_n_init": 20,
+  "criterion_weights": [
+    0.22,
+    0.34,
+    0.25,
+    0.19
+  ],
+  "graph_stats": {
+    "layers": [
+      {
+        "layer": 0,
+        "nodes": 50,
+        "edges": 96,
+        "density": 0.0783673469387755,
+        "average_degree": 3.84,
+        "degree_std": 3.557302348690648,
+        "average_clustering": 0.34692510688485917,
+        "connected": true
+      },
+      {
+        "layer": 1,
+        "nodes": 50,
+        "edges": 141,
+        "density": 0.11510204081632654,
+        "average_degree": 5.64,
+        "degree_std": 4.320925826718159,
+        "average_clustering": 0.31570442520442527,
+        "connected": true
+      }
+    ],
+    "interlayer_overlap": [
+      {
+        "layer_pair": [
+          0,
+          1
+        ],
+        "jaccard_edge_overlap": 0.0821917808219178
+      }
+    ]
+  },
+  "notes": {
+    "node_order": "All adjacency matrices, node-level attributes, and opinion arrays use the same global order stored in node_list.",
+    "minority_clusters": "Not stored as raw data. Recompute from kmeans labels using the q_min value adopted in a specific experiment.",
+    "topology_reuse": "With FIXED_NETWORK_PER_PRESET=True, the same multilayer topology and node-importance values are shared by train/validation/test episodes; only initial opinions and episode-specific labels vary."
+  }
+}

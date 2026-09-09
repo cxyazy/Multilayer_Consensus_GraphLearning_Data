@@ -1,0 +1,116 @@
+{
+  "network_preset": "er_random",
+  "difficulty": "hard",
+  "num_nodes": 230,
+  "num_layers": 4,
+  "num_alternatives": 5,
+  "num_criteria": 4,
+  "train_instances": 12,
+  "validation_instances": 3,
+  "test_instances": 1,
+  "seed": 42,
+  "fixed_network_per_preset": true,
+  "importance_mode": "external_dirci",
+  "importance_source": "external_dirci",
+  "kmeans_clusters": 4,
+  "kmeans_n_init": 20,
+  "criterion_weights": [
+    0.22,
+    0.34,
+    0.25,
+    0.19
+  ],
+  "graph_stats": {
+    "layers": [
+      {
+        "layer": 0,
+        "nodes": 230,
+        "edges": 2157,
+        "density": 0.08190620846781849,
+        "average_degree": 18.756521739130434,
+        "degree_std": 4.1840095276885165,
+        "average_clustering": 0.08260960465117168,
+        "connected": true
+      },
+      {
+        "layer": 1,
+        "nodes": 230,
+        "edges": 2551,
+        "density": 0.09686728688057718,
+        "average_degree": 22.182608695652174,
+        "degree_std": 4.655212335689874,
+        "average_clustering": 0.09549285893245786,
+        "connected": true
+      },
+      {
+        "layer": 2,
+        "nodes": 230,
+        "edges": 3154,
+        "density": 0.11976457186254034,
+        "average_degree": 27.42608695652174,
+        "degree_std": 4.609179630043049,
+        "average_clustering": 0.11904439588193205,
+        "connected": true
+      },
+      {
+        "layer": 3,
+        "nodes": 230,
+        "edges": 3756,
+        "density": 0.14262388456426808,
+        "average_degree": 32.66086956521739,
+        "degree_std": 5.413167450998721,
+        "average_clustering": 0.1407664346518925,
+        "connected": true
+      }
+    ],
+    "interlayer_overlap": [
+      {
+        "layer_pair": [
+          0,
+          1
+        ],
+        "jaccard_edge_overlap": 0.049019607843137254
+      },
+      {
+        "layer_pair": [
+          0,
+          2
+        ],
+        "jaccard_edge_overlap": 0.0548162859980139
+      },
+      {
+        "layer_pair": [
+          0,
+          3
+        ],
+        "jaccard_edge_overlap": 0.05778175313059034
+      },
+      {
+        "layer_pair": [
+          1,
+          2
+        ],
+        "jaccard_edge_overlap": 0.054333764553686936
+      },
+      {
+        "layer_pair": [
+          1,
+          3
+        ],
+        "jaccard_edge_overlap": 0.06
+      },
+      {
+        "layer_pair": [
+          2,
+          3
+        ],
+        "jaccard_edge_overlap": 0.0716501240694789
+      }
+    ]
+  },
+  "notes": {
+    "node_order": "All adjacency matrices, node-level attributes, and opinion arrays use the same global order stored in node_list.",
+    "minority_clusters": "Not stored as raw data. Recompute from kmeans labels using the q_min value adopted in a specific experiment.",
+    "topology_reuse": "With FIXED_NETWORK_PER_PRESET=True, the same multilayer topology and node-importance values are shared by train/validation/test episodes; only initial opinions and episode-specific labels vary."
+  }
+}

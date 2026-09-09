@@ -1,0 +1,85 @@
+{
+  "network_preset": "community",
+  "difficulty": "hard",
+  "num_nodes": 150,
+  "num_layers": 3,
+  "num_alternatives": 5,
+  "num_criteria": 4,
+  "train_instances": 12,
+  "validation_instances": 3,
+  "test_instances": 1,
+  "seed": 42,
+  "fixed_network_per_preset": true,
+  "importance_mode": "external_dirci",
+  "importance_source": "external_dirci",
+  "kmeans_clusters": 4,
+  "kmeans_n_init": 20,
+  "criterion_weights": [
+    0.22,
+    0.34,
+    0.25,
+    0.19
+  ],
+  "graph_stats": {
+    "layers": [
+      {
+        "layer": 0,
+        "nodes": 150,
+        "edges": 716,
+        "density": 0.06407158836689038,
+        "average_degree": 9.546666666666667,
+        "degree_std": 2.8485941951932863,
+        "average_clustering": 0.2166242254477548,
+        "connected": true
+      },
+      {
+        "layer": 1,
+        "nodes": 150,
+        "edges": 920,
+        "density": 0.08232662192393736,
+        "average_degree": 12.266666666666667,
+        "degree_std": 2.911280741453073,
+        "average_clustering": 0.2295808673037775,
+        "connected": true
+      },
+      {
+        "layer": 2,
+        "nodes": 150,
+        "edges": 1151,
+        "density": 0.10299776286353468,
+        "average_degree": 15.346666666666666,
+        "degree_std": 3.212448010820132,
+        "average_clustering": 0.2571547426663862,
+        "connected": true
+      }
+    ],
+    "interlayer_overlap": [
+      {
+        "layer_pair": [
+          0,
+          1
+        ],
+        "jaccard_edge_overlap": 0.15211267605633802
+      },
+      {
+        "layer_pair": [
+          0,
+          2
+        ],
+        "jaccard_edge_overlap": 0.15532178217821782
+      },
+      {
+        "layer_pair": [
+          1,
+          2
+        ],
+        "jaccard_edge_overlap": 0.16479190101237345
+      }
+    ]
+  },
+  "notes": {
+    "node_order": "All adjacency matrices, node-level attributes, and opinion arrays use the same global order stored in node_list.",
+    "minority_clusters": "Not stored as raw data. Recompute from kmeans labels using the q_min value adopted in a specific experiment.",
+    "topology_reuse": "With FIXED_NETWORK_PER_PRESET=True, the same multilayer topology and node-importance values are shared by train/validation/test episodes; only initial opinions and episode-specific labels vary."
+  }
+}
