@@ -376,7 +376,7 @@ If you use this data set in your research, please cite the corresponding paper:
 
 ```bibtex
 @article{An20XXMultilayerGraphConsensus,
-  title   = {A Graph Learning-Based Consensus Reaching Model in Multilayer Social Networks Considering Node Importance and Opinion Diversity Preservation},
+  title   = {A Multi-layer Network Graph Learning Consensus-reaching Model Based on the Node Importance and Opinion Diversity},
   author  = {Zhengyi An and others},
   journal = {XXXXXX},
   year    = {20XX}
