@@ -369,7 +369,7 @@ If you have any questions regarding the data set or encounter any issues using i
 
 If you use this data set in your research, please cite the corresponding paper:
 
-> **A Graph Learning-Based Consensus Reaching Model in Multilayer Social Networks Considering Node Importance and Opinion Diversity Preservation**  
+> **A Multi-layer Network Graph Learning Consensus-reaching Model Based on the Node Importance and Opinion Diversity**  
 > Zhengyi An, et al.
 
 ### BibTeX citation
